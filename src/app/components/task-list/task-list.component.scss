@@ -1,18 +1,14 @@
 .task-list-container {
     padding: 20px;
-  
-    .controls {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
   }
   .controls{
     margin:12px;
+    display: flex;
+    justify-content: flex-end !important;
   }
   .addTask{
     margin-left: 10px;
     padding: 5px;
     width: 100px;
-    height: 40px;
+    height: 40px;    
   }

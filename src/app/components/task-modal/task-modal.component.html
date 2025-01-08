@@ -3,13 +3,13 @@
 <div mat-dialog-content>
   <form [formGroup]="taskForm" class="form-container">
     <mat-form-field appearance="fill" class="full-width">
-      <mat-label>Title</mat-label>
-      <input matInput formControlName="title" placeholder="Enter task title" />
+      <label>Title</label><br>
+      <input class="inputBox" formControlName="title" placeholder="Enter task title" />
     </mat-form-field>
 
     <mat-form-field appearance="fill" class="full-width">
-      <mat-label>Description</mat-label>
-      <textarea
+      <label>Description</label><br>
+      <textarea class="descBox"
         matInput
         formControlName="description"
         placeholder="Enter task description"
@@ -17,27 +17,28 @@
     </mat-form-field>
 
     <mat-form-field appearance="fill" class="full-width">
-      <mat-label>Priority</mat-label>
-      <mat-select formControlName="priority">
-        <mat-option value="Low">Low</mat-option>
-        <mat-option value="Medium">Medium</mat-option>
-        <mat-option value="High">High</mat-option>
-      </mat-select>
+      <label>Priority</label>
+      <select class="optionTab" formControlName="priority">
+        <option >Low</option>
+        <option >Medium</option>
+        <option >High</option>
+      </select>
     </mat-form-field>
     
     <mat-form-field appearance="fill" class="full-width">
-      <mat-label>Status</mat-label>
-      <mat-select formControlName="status">
-        <mat-option value="Pending">Pending</mat-option>
-        <mat-option value="In Progress">In Progress</mat-option>
-        <mat-option value="Completed">Completed</mat-option>
-      </mat-select>
+      <label>Status</label><br>
+      <select class="optionTab" formControlName="status">
+      
+        <option >Pending</option>
+        <option >In progress</option>
+        <option >Completed</option>
+        </select>
     </mat-form-field>
   </form>
 </div>
 
 <div mat-dialog-actions>
-  <button style="margin-right: 5px;" mat-button mat-dialog-close>Cancel</button> 
+  <button class="buttons" mat-button mat-dialog-close>Cancel</button> 
 
   <button
     mat-raised-button
